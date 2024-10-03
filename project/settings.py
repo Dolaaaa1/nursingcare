@@ -26,7 +26,8 @@ SECRET_KEY = "django-insecure-fn9d#%)m!!94af+stn8_&0x(bek=+7ldsy!4h54kwlazy6vrn$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['nursinghomecare.up.railway.app', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -132,3 +133,6 @@ MEDIA_ROOT = BASE_DIR/"static/media"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CSRF_TRUSTED_ORIGINS = ['https://nursinghomecare.up.railway.app']
+
