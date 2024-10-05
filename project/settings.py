@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-fn9d#%)m!!94af+stn8_&0x(bek=+7ldsy!4h54kwlazy6vrn$"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['nursinghomecare.up.railway.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1','nursinghomecare.up.railway.app',]
 
 
 
