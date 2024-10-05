@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-fn9d#%)m!!94af+stn8_&0x(bek=+7ldsy!4h54kwlazy6vrn$"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['nursinghomecare.up.railway.app', 'localhost', '127.0.0.1']
 
@@ -119,7 +119,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
